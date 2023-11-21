@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
+
+    <link href="profile.ico" rel="icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css">
+    <title> Profile Card </title>
+
+</head>
+
+<body>
+    <div class="searchContainer">
+        <input type="text" id="searchInput" placeholder="Digite o nome do usuário do GitHub">
+        <button id="searchButton" onclick="searchProfile()">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+    <div class="modal">
+        <img alt="Imagem do Perfil" >
+        <div class="close"></div>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="hamburger-menu">
+                    <div class="center"></div>
+                </div>
+                <a  class="mail" id="email">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <div class="main">
+                    <div class="image" id="imagem">
+                        <div class="hover">
+                            <i class="fas fa-camera fa-2x"></i>
+                        </div>
+                    </div>
+                    <h3 class="name" id="name"></h3>
+                    <h3 class="sub-name" id="sub-name"></h3>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <div class="about-container">
+                        <p class="text" id="bio"></p>
+                    </div>
+                    <div class="icons-container">
+
+                        <a target="_blank" class="icon" id="github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/shahzaibfardeen" target="_blank" class="icon" id="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div>
+                        <h3 class="number" id="repositorio"></h3>
+                        <h3 class="number-title" id="subtitle"> Repositórios Públicos </h3>
+                    </div>
+                    <div>
+                        <h3 class="number" id="following"></h3>
+                        <h3 class="number-title" > Seguindo </h3>
+                    </div>
+                    <div>
+                        <h3 class="number" id="followers"></h3>
+                        <h3 class="number-title"> Seguidores </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
