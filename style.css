@@ -33,7 +33,7 @@ body{
   height: 270px;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to top, #00f2fe, #4facfe);
+  background-image: linear-gradient(to top, #4F2F4F, #9932CD);
   clip-path: circle(400px at 50% -48.5%);
 }
 
@@ -119,7 +119,7 @@ body{
   height: 110px;
   border-radius: 50%;
   background: url('img/profile.jpg') no-repeat center / cover;
-  border: 4px solid #00d8fe;
+  border: 4px solid #A8A8A8;
   margin-bottom: 2px;
   overflow: hidden;
   cursor: pointer;
@@ -233,7 +233,7 @@ body{
 }
 
 .icon:hover{
-  color: #4facfe;
+  color: #9932CD;
 }
 
 .buttons-wrap{
@@ -256,7 +256,7 @@ body{
 .follow{
   padding: 9.6px 0;
   width: 100%;
-  background: linear-gradient(to right, #4facfe 0%, #00f2fe 140%);
+  background: linear-gradient(to right, #9932CD 0%, #4F2F4F 140%);
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -270,8 +270,8 @@ body{
 .share{
   padding: 7.6px 0;
   width: 100%;
-  border: 2px solid #4facfe;
-  color: #4facfe;
+  border: 2px solid #9932CD;
+  color: #9932CD;
   text-decoration: none;
   text-align: center;
   font-size: .7rem;
@@ -458,7 +458,7 @@ body{
 #searchButton {
   padding: 10px 12px;
   font-size: 14px;
-  background-color: #4facfe;
+  background-color: #9932CD;
   color: #fff;
   border: none;
   border-top-right-radius: 3px;
@@ -472,5 +472,5 @@ body{
 }
 
 #searchButton:hover {
-  background-color: #45a8f1; /* Alterando a cor de fundo ao passar o mouse */
+  background-color: rgba(79, 172, 254, .7); /* Alterando a cor de fundo ao passar o mouse */
 }
