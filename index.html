@@ -16,23 +16,31 @@
 </head>
 
 <body>
-    <div class="searchContainer">
-        <input type="text" id="searchInput" placeholder="Digite o nome do usuário do GitHub">
-        <button id="searchButton" onclick="searchProfile()">
-            <i class="fas fa-search"></i>
-        </button>
-    </div>
+    
     <div class="modal">
         <img alt="Imagem do Perfil" >
         <div class="close"></div>
     </div>
     
     <div class="container">
+
         <div class="card">
+
             <div class="header">
+
+                
+
                 <div class="hamburger-menu">
                     <div class="center"></div>
                 </div>
+
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Digite o usuário do GitHub">
+                    <button id="search-button" onclick="searchProfile()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
                 <a  class="mail" id="email">
                     <i class="far fa-envelope"></i>
                 </a>

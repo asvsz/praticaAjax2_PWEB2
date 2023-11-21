@@ -1,5 +1,5 @@
 const getProfile = () => {
-  const username = document.getElementById('searchInput').value;
+  const username = document.getElementById('search-input').value;
   const url = `https://api.github.com/users/${username}`;
 
   fetch(url)
@@ -17,7 +17,7 @@ const getProfile = () => {
       const github = document.getElementById('github');
       const twitter = document.getElementById('twitter');
 
-      login.textContent = `@ ${profile.login}`;
+      login.textContent = `@${profile.login}`;
       name.textContent = profile.name;
       repositorio.textContent = profile.public_repos;
       following.textContent = profile.following;
@@ -32,6 +32,13 @@ const getProfile = () => {
     });
 };
 
-// Adicione um evento de clique ao botão de busca
-const searchButton = document.getElementById('searchButton');
+const searchButton = document.getElementById('search-button');
 searchButton.addEventListener('click', getProfile);
+
+const searchInput = document.getElementById('search-input');
+searchInput.addEventListener('keydown', (event) => {
+
+  if (event.key === 'Enter') {
+    getProfile();
+  }
+});
