@@ -444,6 +444,7 @@ body{
   align-items: center;
   margin-top: 30px;
 }
+
 #searchInput {
   flex: 1;
   padding: 10px;
@@ -471,5 +472,5 @@ body{
 }
 
 #searchButton:hover {
-  background-color: #4facfe;
+  background-color: #45a8f1; /* Alterando a cor de fundo ao passar o mouse */
 }

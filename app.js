@@ -1,6 +1,6 @@
 const getProfile = () => {
   const username = document.getElementById('searchInput').value;
-  const url = `https://api.github.com/users/asvsz`;
+  const url = `https://api.github.com/users/${username}`;
 
   fetch(url)
     .then(resposta => resposta.json())
